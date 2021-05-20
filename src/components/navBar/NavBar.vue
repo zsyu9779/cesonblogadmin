@@ -2,7 +2,7 @@
   <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
       <div class="ui inverted secondary stackable menu">
-        <h2 class="ui teal header item">小王后台</h2>
+        <h2 class="ui teal header item">Geek博客后台</h2>
         <a
           v-for="(item, index) in routerList"
           :key="'routerList'+index"
@@ -61,7 +61,7 @@ export default {
     //获取头像和名称
     if (this.$route.path != "/") {
       $.get({
-        url: "getuser",
+        url: "user/getuser",
         success: res => {
           this.user = res;
           console.log(res);
@@ -92,10 +92,10 @@ export default {
     },
     logout() {
       $.get({
-        url: "logout",
+        url: "user/logout",
         success: res => {
           if (res) {
-            this.$router.push("/login");
+            this.$router.push("login");
           }
         }
       });

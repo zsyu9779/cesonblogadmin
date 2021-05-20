@@ -63,7 +63,7 @@ export default {
     //获取
     getUser() {
       $.get({
-        url: "getuser",
+        url: "user/getuser",
         success: res => {
           this.user = res;
         }

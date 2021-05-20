@@ -1,6 +1,6 @@
 const routes = [{
   path: '/',
-  redirect: '/login'
+  redirect: '/blogs'
 }, {
   path: '/login',
   component: () => import('views/adminLogin/AdminLogin')

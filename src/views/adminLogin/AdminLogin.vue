@@ -64,7 +64,7 @@ export default {
   methods: {
     login() {
       $.post({
-        url: "login",
+        url: "user/login",
         data: this.data,
 
         success: res => {

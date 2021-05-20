@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="four wide column">
-          <h4 class="ui inverted header m-text-thin m-text-spaced">联系小王</h4>
+          <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
           <div class="ui inverted link list">
             <a class="item m-text-thin">{{listContact.email}}</a>
             <a class="item m-text-thin">{{'QQ：'+listContact.qq}}</a>
@@ -41,7 +41,7 @@
           style="color:rgba(255,255,255,.9)"
           href="http://www.beian.gov.cn/"
           target="_blank"
-        >粤ICP备20003149号</a> | Copyright © 2019 - 2022 - www.wdhhh.cn | By 小王的程序人生
+        ></a>   By zsy
       </p>
     </div>
   </footer>

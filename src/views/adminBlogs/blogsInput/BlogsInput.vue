@@ -142,6 +142,12 @@ export default {
         appreciation: false, //是否开启赞赏
         commentabled: false //是否允许评论
       },
+      resp: {
+        ret:1,
+        message:"",
+        result:{},
+        serverTime:1
+      },
       typeList: [],
       tagList: [],
       getBlog: {

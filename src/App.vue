@@ -22,7 +22,7 @@ export default {
   beforeUpdate() {
     if (this.$route.path != "/login") {
       $.get({
-        url: "islogin",
+        url: "user/islogin",
         success: res => {
           if (!res && this.$route.path != "/login") {
             this.$router.push("/login");

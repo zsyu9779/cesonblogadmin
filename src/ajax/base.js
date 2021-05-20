@@ -7,6 +7,6 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
       XMLHttpRequest.setRequestHeader("token", "MyToken");
     }
   if (originalOptions.url.substring(0, 4) != 'http') {
-    options.url = "http://localhost:8088/admin/" + originalOptions.url
+    options.url = "http://localhost:8088/api/v1/" + originalOptions.url
   }
 });

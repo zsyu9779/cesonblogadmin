@@ -102,8 +102,15 @@ export default {
         recommend: false //是否开启只看推荐布尔
       },
       typeList: [],
-      pageBlogs: {}
+      pageBlogs: {},
+      resp: {
+        ret:1,
+        message:"",
+        result:{},
+        serverTime:1
+      },
     };
+
   },
   mounted() {
     $(".ui.dropdown").dropdown({
@@ -134,10 +141,11 @@ export default {
     //分页条件查询博客列表
     getPageBlogs() {
       $.get({
-        url: "blogs",
+        url: "blog/list",
         data: this.data,
         success: res => {
-          this.pageBlogs = res;
+          this.resp = res;
+          this.pageBlogs = resp.result
         }
       });
     },
